@@ -68,7 +68,8 @@ Assignment 3 :
 
 
 ## Architecture
-![[architecture.png]]
+![architecture](https://github.com/user-attachments/assets/451394e4-e1e5-48de-bab8-29f058abeb35)
+
 
 This application consists of a React front-end and a few distinct microservices implemented in Spring REST and a python microservice with FLASK. These microservices manage different aspects of the application: User Management, Device Management, a chat, and Sensor Reading. The architecture employs separate databases for each microservice, emphasizing the organization of the User Management microservice with a 'user_db' database housing the 'users' table, as well as a authenticator and token generator, and the Device Management microservice functioning with a 'devices_db' database containing 'devices' and 'users' tables and the validation logic for tokens. In the python microservice we store the readings in a Monitor table, and the hourly measurements are sent to the Measurements table, called “Readings” in this diagram. In the chat microservice, we host the websocket commhnication logic.
 
@@ -144,7 +145,7 @@ the overall functionality of the application.
 
 The deployment strategy for the full-stack application involves Docker, a containerization platform that enables the encapsulation of each application component into separate containers. This chapter details the deployment configuration for the React front-end, User Management microservice, Device Management microservice, Receiver microservice, Chat microservice, and their respective databases, which are isolated within individual Docker containers. These containers expose internal ports to enable interaction with external systems, such as a web browser for the front-end.
 
-![[deployement_in_docker.png]]
+![deployement_in_docker](https://github.com/user-attachments/assets/ce5a713f-f857-40ff-947d-9490156c3e3d)
 
 ## Containerization Configuration
 
