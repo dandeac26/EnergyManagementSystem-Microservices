@@ -11,7 +11,7 @@ _Faculty of Automation and Computer science_
 _Group: 30443_
 
 ## Installing
-Check out install.txt!
+Check out commands.txt!
 
 
 ## CONTENTS
